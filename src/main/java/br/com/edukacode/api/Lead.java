@@ -23,11 +23,13 @@ public class Lead {
     private String nome;
     private String email;
     private String telefone;
+    private String cpf;
 
     public Lead(DadosCadastroLead dados){
         this.nome = dados.nome();
         this.email = dados.email();
         this.telefone = dados.telefone();
+        this.cpf = dados.cpf();
     }
     
 }

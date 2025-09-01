@@ -22,4 +22,8 @@ public class Genero {
     private Long id;
     private String nome;
 
+    public Genero(GeneroCadastro dados){
+        this.nome = dados.nome();
+    }
+
 }
