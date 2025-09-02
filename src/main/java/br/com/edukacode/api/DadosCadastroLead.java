@@ -21,5 +21,6 @@ public record DadosCadastroLead(
     @Pattern(regexp = "\\d{12}")
     String cpf
     ) {
-
+ 
 }
+
