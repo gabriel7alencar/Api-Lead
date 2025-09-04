@@ -1,5 +1,6 @@
-package br.com.edukacode.api;
+package br.com.edukacode.api.entities;
 
+import br.com.edukacode.api.dto.DadosCadastroGenero;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -22,7 +23,7 @@ public class Genero {
     private Long id;
     private String nome;
 
-    public Genero(GeneroCadastro dados){
+    public Genero(DadosCadastroGenero dados){
         this.nome = dados.nome();
     }
 

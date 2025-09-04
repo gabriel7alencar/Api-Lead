@@ -1,6 +1,9 @@
-package br.com.edukacode.api;
+package br.com.edukacode.api.dto;
+
+import br.com.edukacode.api.entities.Lead;
 
 public record DadosListagemLead(
+    Long id,
     String nome,
     String email,
     String telefone,
@@ -8,6 +11,6 @@ public record DadosListagemLead(
 ) {
     // Construtor que recebe a entidade Lead e extrai os dados necessários
     public DadosListagemLead(Lead lead) {
-        this(lead.getNome(),lead.getEmail(),lead.getTelefone(),lead.getCpf());
+        this(lead.getId(),lead.getNome(),lead.getEmail(),lead.getTelefone(),lead.getCpf());
     }
 }

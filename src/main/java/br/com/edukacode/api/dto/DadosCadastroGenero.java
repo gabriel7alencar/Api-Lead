@@ -1,8 +1,8 @@
-package br.com.edukacode.api;
+package br.com.edukacode.api.dto;
 
 import jakarta.validation.constraints.NotBlank;
 
-public record GeneroCadastro(
+public record DadosCadastroGenero(
         @NotBlank
         String nome
 ) {
